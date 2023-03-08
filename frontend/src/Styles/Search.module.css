@@ -1,0 +1,180 @@
+.searchBar{
+    max-width: 500px;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.bar{
+    width: 90%;
+    height: 100%;
+    padding: 0.5rem 0.8rem;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    font-family: inherit;
+    color: #181818;
+}
+
+::placeholder{
+    color: #181818;
+}
+
+.icon{
+    width: 10%;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.result{
+    width: 100%;
+    margin: 1.5rem auto;
+}
+/*.result > div{
+    border: 1px solid red;
+}*/
+.headingInfo, .track{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 0 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.headingInfo{
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #fff6f6;
+}
+
+.track{
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
+}
+
+.track:hover{
+    background-color: #595959;
+    cursor: pointer;
+}
+
+.trackTitleContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+}
+
+.trackInfoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    height: 100%;
+    margin-right: 0.8rem;
+
+}
+
+.numberContainer{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+        width: 3%;
+        margin-right: 20px;
+
+}
+
+.trackNoHeading{
+    text-align: center;
+}
+
+.playIcon{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #1db954;
+    animation:spin 2s linear infinite;
+}
+
+@keyframes spin { 
+    0%{
+        -webkit-transform: rotate(0deg); 
+        transform:rotate(0deg); 
+    }
+    100% { 
+        -webkit-transform: rotate(-30deg); 
+        transform:rotate(-30deg); 
+    } 
+}
+
+.trackTitleHeading{
+    width: 50%;
+    margin: 0;
+}
+
+.trackTitle{
+        margin-right: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.trackArtists{
+    font-size: 0.8rem;
+    color: #e2e2e2;
+}
+
+
+.trackImg{
+    width: 48px;
+    height: 48px;
+}
+
+.trackAlbum{
+    width: 50%;
+}
+
+.durationContainer{
+    display: flex;
+    width: 7%;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+
+}
+.trackDuration{
+    text-align: right;
+
+}
+
+.menuIcon{
+        font-size: 1rem;
+
+}
+
+.dropdown, .playlistDropdown{
+    position: absolute;
+    background-color: #181818;
+    color: #fff;
+    padding: 1rem;
+    z-index: 56;
+
+}
+
+.dropdown{
+    top: 0;
+    left: -180px;
+    width: 240px;
+}
+
+.playlistDropdown{
+    top: 0;
+    left: -300px;
+    
+}
+.playlistElements{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ul{
+    list-style-type: none;
+}
